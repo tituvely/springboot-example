@@ -1,1 +1,1 @@
-springboot-example
+org.example.springboot-example
