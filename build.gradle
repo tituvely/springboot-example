@@ -20,7 +20,7 @@ group 'org.example'
 version '1.0-SNAPSHOT'
 
 
-// repositories는 라이브러리들을 어떤 원격 저장소에서 받을지를 정한
+// repositories는 라이브러리들을 어떤 원격 저장소에서 받을지를 정한다 
 repositories {
     mavenCentral()
     jcenter()
