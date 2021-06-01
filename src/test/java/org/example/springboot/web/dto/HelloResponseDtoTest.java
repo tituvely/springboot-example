@@ -19,4 +19,5 @@ public class HelloResponseDtoTest {
         assertThat(dto.getAmount()).isEqualTo(amount);
 
     }
+
 }
