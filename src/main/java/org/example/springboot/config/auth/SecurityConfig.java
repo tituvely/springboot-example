@@ -1,7 +1,7 @@
-package org.example.springboot.config.oauth;
+package org.example.springboot.config.auth;
 
 import lombok.RequiredArgsConstructor;
-import org.h2.engine.Role;
+import org.example.springboot.domain.user.Role;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -25,7 +25,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     // 권한 관리 대상을 지정하는 옵션
                     // URL, HTTP 메소드별로 관리가 가능함
                     // 지정된 URL들은 permitAll() 옵션을 통해 전체 열람 권한을 줌
-                    // POST 메소드이면서, "/api/v1/**" 주소를 가진 API는 USER 권한ㄴ을 가진ㄴ 사람만 가능하도록 함
+                    // POST 메소드이면서, "/api/v1/**" 주소를 가진 API는 USER 권한을 가진 사람만 가능하도록 함
                     .antMatchers("/", "/css/**", "/images/**", "/js/**", "/h2-console/**").permitAll()
                     .antMatchers("/api/v1/**").hasRole(Role.USER.name())
                     // 설정된 값들 이외 나머지 URL들을 나타냄
