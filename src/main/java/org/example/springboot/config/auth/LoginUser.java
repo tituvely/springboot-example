@@ -9,5 +9,5 @@ import java.lang.annotation.Target;
 // PARAMETER로 지정했으니, 메소드의 파라미터로 선언된 객체에서만 사용할 수 있음
 @Target(ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)
-public class LoginUser {
+public @interface LoginUser {
 }

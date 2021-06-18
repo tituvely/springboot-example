@@ -1,6 +1,7 @@
 package org.example.springboot.web;
 
 import lombok.RequiredArgsConstructor;
+import org.example.springboot.config.auth.LoginUser;
 import org.example.springboot.config.auth.dto.SessionUser;
 import org.example.springboot.domain.user.User;
 import org.example.springboot.service.posts.PostsService;
