@@ -4,6 +4,8 @@ name: CI
 
 # Controls when the workflow will run
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 env: # 새로 추가한 부분
