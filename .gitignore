@@ -3,3 +3,6 @@
 .gradle
 .ideas
 src/main/resources/application-oauth.properties
+
+build
+out
