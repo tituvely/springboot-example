@@ -37,9 +37,6 @@ jobs:
         run: ./gradlew clean build
         shell: bash
 
-#      - name: Generate deployment package
-#        run: |
-#          mkdir -p deploy
       - name: Make zip file
         run: zip -r ./${GITHUB_SHA}.zip .
         shell: bash
